@@ -1,0 +1,14 @@
+[Unit]
+Description=Pi Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/SuperBadComputer/backend
+ExecStart=/home/pi/SuperBadComputer/backend/venv/bin/python app/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
