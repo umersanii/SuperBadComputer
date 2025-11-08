@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "firebase": "^12.5.0",
+    "react": "^19.2.0"
+  },
+"scripts": {
+  "dev": "vite --host 0.0.0.0 --port 5173",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+
+}
