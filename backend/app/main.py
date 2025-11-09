@@ -42,7 +42,7 @@ def health():
 @app.route('/stats')
 def stats():
     """Get current system stats via HTTP"""
-    stats = get_system_stats()
+    stats = get_system_usage()
     if stats:
         return jsonify(stats)
     return jsonify({'error': 'Unable to get stats'}), 500
