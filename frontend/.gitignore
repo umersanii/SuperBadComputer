@@ -34,3 +34,9 @@ yarn-error.log*
 next-env.d.ts
 
 frontend/.env
+
+# pnpm
+.pnpm-debug.log*
+.pnpm-store/
+.pnpm/
+.pnpm-local/
